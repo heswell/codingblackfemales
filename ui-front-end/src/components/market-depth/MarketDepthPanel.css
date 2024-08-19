@@ -1,0 +1,51 @@
+.vuuMarketDepthPanel {
+  display: flex;
+  justify-content: center;
+
+  table {
+    border-spacing: 0;
+    border-style: solid solid none none;
+    border-width: 1px;
+    border-color: #ccc;
+  }
+  td,
+  th {
+    border-style: none none solid solid;
+    border-width: 1px;
+    border-color: #ccc;
+    padding: 0 8px;
+
+    &.vuuMarketDepthPanel-quantity {
+      padding: 0;
+      width: 150px;
+    }
+
+    &:has(.MarketQuantity) {
+      padding: 0;
+    }
+  }
+
+  .vuuMarketDepthPanel-heading {
+    align-items: center;
+    display: flex;
+    height: 32px;
+    justify-content: center;
+  }
+
+  .vuuMarketDepthPanel-cell {
+    align-items: center;
+    display: flex;
+    height: 24px;
+    justify-content: flex-start;
+    width: 80px;
+
+    &.level {
+      justify-content: center;
+      width: 30px;
+    }
+  }
+
+  .vuuAlignRight {
+    justify-content: flex-end;
+  }
+}

@@ -1,0 +1,70 @@
+.MarketPrice {
+  position: relative;
+  .vuuArrow {
+    position: absolute;
+    right: 0px;
+  }
+
+  &.vuuAlignRight {
+    .vuuArrow {
+      right: auto;
+      left: 0px;
+    }
+  }
+}
+
+@keyframes vuuarrowup1 {
+  from {
+    color: rgb(96, 100, 119);
+  }
+  to {
+    color: transparent;
+  }
+}
+
+@keyframes vuuarrowup2 {
+  from {
+    color: rgb(96, 100, 119);
+  }
+  to {
+    color: transparent;
+  }
+}
+
+@keyframes vuuarrowdown1 {
+  from {
+    color: rgb(96, 100, 119);
+  }
+  to {
+    color: transparent;
+  }
+}
+
+@keyframes vuuarrowdown2 {
+  from {
+    color: rgb(96, 100, 119);
+  }
+  to {
+    color: transparent;
+  }
+}
+
+.up1 > .vuuArrow {
+  animation-duration: 30s;
+  animation-name: vuuarrowup1;
+}
+
+.up2 > .vuuArrow {
+  animation-duration: 30s;
+  animation-name: vuuarrowup2;
+}
+
+.down1 > .vuuArrow {
+  animation-duration: 30s;
+  animation-name: vuuarrowdown1;
+}
+
+.down2 > .vuuArrow {
+  animation-duration: 30s;
+  animation-name: vuuarrowdown2;
+}

@@ -1,0 +1,21 @@
+.MarketDepthFeature {
+  table {
+    border-spacing: 0;
+    border-style: solid solid none none;
+    border-width: 1px;
+    border-color: #ccc;
+  }
+  td,
+  th {
+    border-style: none none solid solid;
+    border-width: 1px;
+    border-color: #ccc;
+    padding: 0;
+  }
+
+  .VuuMarketDepthFeature-cell {
+    display: block;
+    height: 24px;
+    width: 100px;
+  }
+}

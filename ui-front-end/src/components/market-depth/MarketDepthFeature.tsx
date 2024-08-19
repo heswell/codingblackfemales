@@ -1,8 +1,10 @@
-import { Placeholder } from "../placeholder";
+import { MarketDepthPanel } from "./MarketDepthPanel";
+import { useMarketDepthData } from "./useMarketDepthData";
+import { schemas } from "../../data/algo-schemas";
 
-/**
- * TODO
- */
+import "./MarketDepthFeature.css";
+
 export const MarketDepthFeature = () => {
-  return <Placeholder />;
+  const data = useMarketDepthData(schemas.prices);
+  return <MarketDepthPanel data={data} />;
 };
